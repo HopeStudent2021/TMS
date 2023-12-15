@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Список Задач</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h2>Ваши Задачи</h2>
+        <ul class="list-group">
+            {% for task in tasks %}
+                <li class="list-group-item">
+                    {{ task.title }}
+                    <!-- Добавь кнопки для редактирования и удаления здесь -->
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+</body>
+</html>
